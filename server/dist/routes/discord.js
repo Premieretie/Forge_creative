@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const auth_1 = require("../middleware/auth");
+const discordController_1 = require("../controllers/discordController");
+const router = (0, express_1.Router)();
+router.get('/connections', auth_1.authenticateToken, discordController_1.getConnections);
+router.get('/link', auth_1.authenticateToken, discordController_1.getLink);
+router.post('/link', auth_1.authenticateToken, discordController_1.setLink);
+router.get('/communities', auth_1.authenticateToken, discordController_1.getCommunities);
+router.post('/communities', auth_1.authenticateToken, discordController_1.upsertCommunity);
+router.delete('/communities/:guild_id', auth_1.authenticateToken, discordController_1.deleteCommunity);
+exports.default = router;

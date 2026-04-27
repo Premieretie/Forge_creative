@@ -1,0 +1,46 @@
+{
+  "businessName": "ABC Plumbing",
+  "phone": "0400 000 000",
+  "email": "info@abcplumbing.com.au",
+  "services": ["Blocked Drains", "Hot Water Systems", "Emergency Plumbing", "Leak Detection", "Gas Fitting"],
+  "suburb": "Brisbane",
+  "state": "QLD",
+  "primaryColor": "#0A84FF",
+  "ctaText": "Call Now",
+  "heroTitle": "Reliable Plumbing Services in Brisbane",
+  "heroSubtitle": "Fast, affordable and trusted local plumbers available 24/7 for all your plumbing needs",
+  "aboutTitle": "About Us",
+  "aboutText": "With over 15 years of experience serving the Brisbane community, we pride ourselves on delivering quality workmanship and exceptional customer service. Our licensed plumbers are available around the clock to handle any emergency.",
+  "aboutFeatures": ["Licensed & Insured", "24/7 Emergency Service", "Upfront Pricing", "Lifetime Guarantee"],
+  "testimonial": {
+    "name": "John Smith",
+    "text": "Fast service and great price. The team arrived within an hour and fixed our burst pipe professionally. Highly recommend!",
+    "location": "Brisbane",
+    "rating": 5
+  },
+  "seo": {
+    "title": "ABC Plumbing | Professional Plumbers in Brisbane",
+    "description": "Expert plumbing services in Brisbane. Blocked drains, hot water systems, emergency plumbing & more. Call 0400 000 000 for fast, reliable service.",
+    "keywords": "plumber brisbane, emergency plumbing, blocked drains, hot water repair"
+  },
+  "social": {
+    "facebook": "https://facebook.com/abcplumbing",
+    "instagram": "https://instagram.com/abcplumbing",
+    "google": "https://g.page/abcplumbing"
+  },
+  "images": {
+    "hero": "/images/hero-plumber.jpg",
+    "about": "/images/about-team.jpg",
+    "logo": "/images/logo.png",
+    "favicon": "/favicon.ico"
+  },
+  "businessHours": {
+    "monday": "7:00 AM - 6:00 PM",
+    "tuesday": "7:00 AM - 6:00 PM",
+    "wednesday": "7:00 AM - 6:00 PM",
+    "thursday": "7:00 AM - 6:00 PM",
+    "friday": "7:00 AM - 6:00 PM",
+    "saturday": "8:00 AM - 4:00 PM",
+    "sunday": "Emergency Only"
+  }
+}

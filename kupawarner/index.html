@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kupa Warner | Videographer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="header-left">
+        <div class="logo">Kupa Warner</div>
+        <div class="filters" aria-label="Filter by category">
+          <button class="filter-tab active" data-filter="all">all</button>
+          <button class="filter-tab" data-filter="Social Conte3nt">Social Content</button>
+          <button class="filter-tab" data-filter="commercial">commercial</button>
+          <button class="filter-tab" data-filter="music video">music video</button>
+          <button class="filter-tab" data-filter="narative">narative</button>
+        </div>
+      </div>
+      <nav class="header-right" aria-label="Primary">
+        <a class="nav-link active" href="#portfolio">portfolio</a>
+        <a class="nav-link" href="#about">about kupa Warner</a>
+        <a class="nav-link" href="#latest">latest</a>
+        <a class="nav-link" href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">videographer / director</p>
+          <h1>Visually bold stories that move.</h1>
+          <p class="lede">A curated reel of commercial campaigns, music videos, narratives, and social-first pieces crafted for brands and artists.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#portfolio">View portfolio</a>
+            <a class="ghost-button" href="#contact">Book a project</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="gradient-orb"></div>
+          <div class="frames">
+            <div class="frame"></div>
+            <div class="frame"></div>
+            <div class="frame"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">portfolio</p>
+            <h2>Selected work</h2>
+          </div>
+          <p class="section-note">Hover to see the project title & category. Click any frame to open the video.</p>
+        </div>
+        <div id="portfolioGrid" class="grid"></div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="section-heading">
+          <p class="eyebrow">about</p>
+          <h2>About Kupa Warner</h2>
+        </div>
+        <div class="about-content">
+          <p>
+            Kupa Warner is a Melbourne-based videographer and director crafting emotionally sharp visuals for brands, artists, and storytellers.
+            From cinematic narratives to kinetic music videos and agile social content, each project is built to feel intentional, atmospheric, and alive.
+          </p>
+          <div class="about-grid">
+            <div class="stat">
+              <span class="stat-number">120+</span>
+              <span class="stat-label">videos delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">8</span>
+              <span class="stat-label">years shooting</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">14</span>
+              <span class="stat-label">brand collabs</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">4</span>
+              <span class="stat-label">festival selections</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="latest" class="latest">
+        <div class="section-heading">
+          <p class="eyebrow">latest</p>
+          <h2>Fresh releases</h2>
+        </div>
+        <div id="latestGrid" class="grid compact"></div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">contact</p>
+            <h2>Let’s build the next frame.</h2>
+            <p class="lede">Tell me about your brand film, music video, or narrative idea.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="primary-button" href="mailto:hello@kupawarner.com">kupawarner@gmail.com</a>
+            <a class="ghost-button" href="tel:+61123456789">+61 491 748 429</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="videoModal" class="modal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close video" data-close="true">×</button>
+      <div class="modal-frame">
+        <iframe id="videoFrame" src="" title="Video player" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
