@@ -182,15 +182,24 @@ npm run build
 2. Build command: `npm run build`
 3. Publish directory: `dist`
 
-**GitHub Pages:**
-1. Update `vite.config.js` base path:
-```javascript
-export default defineConfig({
-  base: '/forge-creative/',
-  // ...
-})
+**GitHub Pages (Configured):**
+1. Repository already configured with:
+   - `vite.config.js` base path: `/forge-creative/`
+   - `HashRouter` for static hosting compatibility
+   - GitHub Actions workflow in `.github/workflows/deploy.yml`
+
+2. See **DEPLOYMENT.md** for detailed setup instructions.
+
+3. Quick Deploy:
+```bash
+git add .
+git commit -m "Ready for GitHub Pages"
+git push origin main
 ```
-2. Build and deploy the `dist` folder
+
+4. Enable GitHub Pages in repository settings → Pages → GitHub Actions
+
+5. Site will be live at: `https://YOUR_USERNAME.github.io/forge-creative/`
 
 **Traditional Hosting:**
 Upload the contents of the `dist/` folder to your web server.
