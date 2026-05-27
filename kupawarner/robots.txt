@@ -1,0 +1,21 @@
+# robots.txt for Kupa Warner - Brisbane Videographer
+# https://kupawarner.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://kupawarner.com/sitemap.xml
+
+# Crawl rate optimization
+Crawl-delay: 1
+
+# Disallow admin and utility paths (if applicable in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+
+# Allow all search engines full access to portfolio and services
+Allow: /portfolio/
+Allow: /services/
+Allow: /assets/

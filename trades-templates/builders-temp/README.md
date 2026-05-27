@@ -137,7 +137,46 @@ npm i -g netlify-cli
 netlify deploy --prod --dir=dist
 ```
 
-## 🛠️ Tech Stack
+## � Deploy to GitHub Pages
+
+This template is configured for automatic GitHub Pages deployment.
+
+### Setup
+
+1. **Push to GitHub**:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/username/builders-temp.git
+   git push -u origin main
+   ```
+
+2. **Enable GitHub Pages**:
+   - Go to repository Settings → Pages
+   - Source: GitHub Actions
+
+3. **Auto-deploy**:
+   - The included `.github/workflows/deploy.yml` will automatically deploy on every push to `main`
+   - Site will be available at `https://username.github.io/builders-temp`
+
+### Manual Build (Local Testing)
+
+```bash
+# Build static site
+npm run build
+
+# Test the static output
+npx serve dist
+```
+
+### Environment Variables
+
+For GitHub Pages, set these in your repository Settings → Secrets:
+- None required! The workflow auto-configures basePath.
+
+## �🛠️ Tech Stack
 
 - **Framework:** Next.js 14 (App Router)
 - **Language:** TypeScript
