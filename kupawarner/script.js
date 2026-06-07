@@ -79,14 +79,14 @@ const projects = [
     type: 'Government/Corporate Video'
   },
   {
-    id: 'swipe-up',
-    title: 'Swipe Up - Viral Social Media Content',
+    id: 'visit-norwich',
+    title: 'Visit Norwich - Tourism Documentary',
     category: 'social content',
-    image: 'socia_swipe-up.png',
-    link: 'https://www.youtube.com/watch?v=o-YBDTqX_ZU',
-    description: 'Short-form social media content optimized for high engagement. Platform-specific video production for maximum reach and virality.',
-    client: 'Social Media Brand',
-    type: 'Social Media Content'
+    image: 'visit_norwich.png',
+    link: 'https://vimeo.com/1198999927/d307bed43c?share=copy&fl=sv&fe=ci',
+    description: 'Tourism documentary showcasing Norwich city attractions. Professional videography for promotional content.',
+    client: 'Visit Norwich',
+    type: 'Tourism Documentary'
   },
   {
     id: 'sydney-metro',
